@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #6f6f6f;
+}
+
+nav h1{
+    
+}
+nav .onglets a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+nav .onglets{
+    margin-top: 3px ;
+    margin-left: 300px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/imgiphone.jpg);
+    background-size: cover;
+    color: white;
+    padding: 100px;
+}
+
+header h1{
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    text-align: center;
+}
+
+header button{
+      padding: 10px 10px;
+      border-radius: 15px;
+      background-color: white;
+      color: #000;
+      border: none;
+      font-size: 20px;
+      font-family: 'Playfair Display', sans-serif;
+      cursor: pointer;
+}
+
+
+
+
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .card .right img{
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    color: white;
+    background-color: #000;
+}
+.main .content .card.right{
+    flex: 0 0 70%;
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: #000;
+    color: white;
+    border-top: 2px solid #6f6f6f;
+    padding: 30px 100px;
+}
+
+footer h1{
+    font-family: 'Playfair Display', sans-serif ;
+    border-bottom: 1px solid #fff;
+    width: 20%;
+}
+
+footer .services{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer .services .service {
+    margin-right: 60px;
+    padding: 10px;
+}
+
+footer #contact{
+    color: #6f6f6f;
+}
+
+
+
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0;
+        margin-bottom: 20px;
+
+    }
+
+    .main .content .card .right img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .main .content .card{
+        display: block;
+    }
+
+    footer h1{
+        
+        display: inline;
+    }
+
+    footer{
+        padding-left: 0px;
+    }
+
+    footer .services .service{
+        justify-content: center;
+        padding-left: 50px;
+        margin-right: 0px;
+        width: 387px;
+        
+    }
+    footer .services{
+       width: 387px;
+    }
+    
+    footer #contact{
+    color: #6f6f6f;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 100%;
+    border: -10px -10px -10px -10px;
+}
+
+
+}
